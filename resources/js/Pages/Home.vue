@@ -12,9 +12,12 @@ defineProps({
 <template>
     <Head title="Welcome" />
 
-    <div class="navbar sticky top-0 h-[52px] ">
+    <div class="navbar top-0 fixed sticky h-14  shadow-2xl ">
+        <button>
+            <img class="mt-1 ml-1 h-auto max-w-full rounded-lg h-12 w-12 " src="https://dummyimage.com/500x250" alt="dummy-image">
+        </button>
         <button
-            class="float-right mt-1 mr-1 inline-block rounded bg-primary px-4 py-4 pt-3 pb-3 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+            class="float-right mt-1 mr-1 inline-block rounded bg-secondary px-3 py-3 pt-3 pb-3 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-secondary focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
             type="button"
             data-te-offcanvas-toggle
             data-te-target="#offcanvasTop"
@@ -65,11 +68,11 @@ defineProps({
 
     <div
         id="carouselExampleCaptions"
-        class="relative"
+        class="relative h-96"
         data-te-carousel-init
         data-te-carousel-slide>
         <div
-            class="absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+            class=" absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
             data-te-carousel-indicators>
             <button
                 type="button"
@@ -101,7 +104,7 @@ defineProps({
                 style="backface-visibility: hidden">
                 <img
                     src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
-                    class="block w-full"
+                    class="block w-full h-96"
                     alt="..." />
                 <div
                     class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
@@ -117,7 +120,7 @@ defineProps({
                 style="backface-visibility: hidden">
                 <img
                     src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
-                    class="block w-full"
+                    class="h-96 block w-full"
                     alt="..." />
                 <div
                     class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
@@ -133,7 +136,7 @@ defineProps({
                 style="backface-visibility: hidden">
                 <img
                     src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
-                    class="block w-full"
+                    class="h-96 block w-full"
                     alt="..." />
                 <div
                     class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
@@ -194,11 +197,31 @@ defineProps({
         </button>
     </div>
 
+    <div class="">
+        <button class="flex space-x-2 items-center">
+            <img class="flex space-x-2 items-center mt-1 ml-1 h-96 w-[90%] rounded-lg " src="https://dummyimage.com/500x250" alt="dummy-image">
+            <span>
+                <!-- Text Here -->
+            </span>
+        </button>
+    </div>
+    <div class="">
+        <button class="flex space-x-2 items-center">
+            <img class="flex space-x-2 items-center mt-1 ml-1 h-96 w-[90%] rounded-lg " src="https://dummyimage.com/500x250" alt="dummy-image">
+            <span>
+                <!-- Text Here -->
+            </span>
+        </button>
+    </div>
+
 </template>
 
 <style>
 .bg-dots-darker {
     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E");
+}
+body{
+    background-color: #9ca3af;
 }
 @media (prefers-color-scheme: dark) {
     .dark\:bg-dots-lighter {
